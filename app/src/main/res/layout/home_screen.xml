@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homescreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".homescreen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".homescreen"
+            android:background="@color/white">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:backgroundTint="#006241"
+                    android:background="#F5F5F5">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/model1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="-20dp"
+                        android:text="Popular Today!"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/model1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#2F4F4F"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        tools:ignore="DuplicateSpeakableTextCheck">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="347dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp">
+
+                            <ImageView
+                                android:id="@+id/promotional_image1"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/m16a1"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/rifle1"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:text="M16A1"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.1"
+                                app:layout_constraintStart_toEndOf="@+id/promotional_image1"
+                                app:layout_constraintTop_toTopOf="@+id/promotional_image1"
+                                app:layout_constraintVertical_bias="0.19999999"
+                                tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck,VisualLintOverlap" />
+
+                            <TextView
+                                android:id="@+id/pricerifle1"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:singleLine="true"
+                                android:text="PHP 150,000"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/promotional_image1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.12"
+                                app:layout_constraintStart_toEndOf="@+id/promotional_image1"
+                                app:layout_constraintTop_toBottomOf="@+id/rifle1"
+                                tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/model2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toEndOf="@id/model1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#2F4F4F"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        tools:ignore="DuplicateSpeakableTextCheck">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="347dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="onepiecee">
+
+                            <ImageView
+                                android:id="@+id/promotional_image2"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/benelli"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/shotgun1"
+                                android:layout_width="105dp"
+                                android:layout_height="45dp"
+                                android:text="Benelli M4 Shotgun"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.1"
+                                app:layout_constraintStart_toEndOf="@+id/promotional_image2"
+                                app:layout_constraintTop_toTopOf="@+id/promotional_image2"
+                                app:layout_constraintVertical_bias="0.19999999"
+                                tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck,VisualLintOverlap" />
+
+                            <TextView
+                                android:id="@+id/priceshotgun"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:singleLine="true"
+                                android:text="PHP180,000"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/promotional_image2"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.12"
+                                app:layout_constraintStart_toEndOf="@+id/promotional_image2"
+                                app:layout_constraintTop_toBottomOf="@+id/shotgun1"
+                                tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/model3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toEndOf="@id/model2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#2F4F4F"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        tools:ignore="DuplicateSpeakableTextCheck">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="347dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="onepiecee">
+
+                            <ImageView
+                                android:id="@+id/promotional_image3"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/mini_14"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/rifle2"
+                                android:layout_width="100dp"
+                                android:layout_height="39dp"
+                                android:text="Mini-14"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.1"
+                                app:layout_constraintStart_toEndOf="@+id/promotional_image3"
+                                app:layout_constraintTop_toTopOf="@+id/promotional_image3"
+                                app:layout_constraintVertical_bias="0.19999999"
+                                tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck,VisualLintOverlap" />
+
+                            <TextView
+                                android:id="@+id/pricerifle2"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:singleLine="true"
+                                android:text="PHP195,000"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/promotional_image3"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.12"
+                                app:layout_constraintStart_toEndOf="@+id/promotional_image3"
+                                app:layout_constraintTop_toBottomOf="@+id/rifle2"
+                                tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/model4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toEndOf="@id/model3"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#2F4F4F"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        tools:ignore="DuplicateSpeakableTextCheck">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="347dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:contentDescription="onepiecee">
+
+                            <ImageView
+                                android:id="@+id/promotional_image4"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ak47"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/rifle3"
+                                android:layout_width="100dp"
+                                android:layout_height="39dp"
+                                android:text="AK 47"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.1"
+                                app:layout_constraintStart_toEndOf="@+id/promotional_image4"
+                                app:layout_constraintTop_toTopOf="@+id/promotional_image4"
+                                app:layout_constraintVertical_bias="0.19999999"
+                                tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck,VisualLintOverlap" />
+
+                            <TextView
+                                android:id="@+id/pricerifle3"
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:singleLine="true"
+                                android:text="PHP180,000"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/promotional_image4"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.12"
+                                app:layout_constraintStart_toEndOf="@+id/promotional_image4"
+                                app:layout_constraintTop_toBottomOf="@+id/rifle3"
+                                tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:text="Recommended Items" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/white">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vectorCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#2F4F4F"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="347dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="vectorsmg">
+
+                        <ImageView
+                            android:id="@+id/pic1"
+                            android:layout_width="164dp"
+                            android:layout_height="164dp"
+                            android:background="#FDFDFD"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/kriss_vector_g2"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/smg1"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:text="Kriss Vector G2"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.19"
+                            app:layout_constraintStart_toEndOf="@+id/pic1"
+                            app:layout_constraintTop_toTopOf="@+id/pic1"
+                            app:layout_constraintVertical_bias="0.16000003"
+                            tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck,VisualLintOverlap" />
+
+
+                        <TextView
+                            android:id="@+id/pricesmg1"
+                            android:layout_width="142dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="₱150,000"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/pic1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.35"
+                            app:layout_constraintStart_toEndOf="@+id/pic1"
+                            app:layout_constraintTop_toBottomOf="@+id/smg1"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/czpistolCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#2F4F4F"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="347dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="czpistol">
+
+                        <ImageView
+                            android:id="@+id/pic2"
+                            android:layout_width="164dp"
+                            android:layout_height="164dp"
+                            android:background="#FDFDFD"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/cz_pistol_sp"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/pistol1"
+                            android:layout_width="90dp"
+                            android:layout_height="50dp"
+                            android:text="CZ Pistol 75 SP-01"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.19"
+                            app:layout_constraintStart_toEndOf="@+id/pic2"
+                            app:layout_constraintTop_toTopOf="@+id/pic2"
+                            app:layout_constraintVertical_bias="0.16000003"
+                            tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck,VisualLintOverlap" />
+
+
+                        <TextView
+                            android:id="@+id/pricepistol1"
+                            android:layout_width="142dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="₱43,556.00"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/pic2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.35"
+                            app:layout_constraintStart_toEndOf="@+id/pic2"
+                            app:layout_constraintTop_toBottomOf="@+id/pistol1"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mpfiveCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#2F4F4F"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="347dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="8dp"
+                        android:contentDescription="mpfivesmg">
+
+                        <ImageView
+                            android:id="@+id/pic3"
+                            android:layout_width="164dp"
+                            android:layout_height="164dp"
+                            android:background="@color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/hk_mpfive"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/smg2"
+                            android:layout_width="71dp"
+                            android:layout_height="35dp"
+                            android:text="MP5K"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/pic3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.19"
+                            app:layout_constraintStart_toEndOf="@+id/pic3"
+                            app:layout_constraintTop_toTopOf="@+id/pic3"
+                            app:layout_constraintVertical_bias="0.16000003"
+                            tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck,VisualLintOverlap" />
+
+                        <TextView
+                            android:id="@+id/pricesmg2"
+                            android:layout_width="142dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="₱31,210.00"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/pic3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.35"
+                            app:layout_constraintStart_toEndOf="@+id/pic3"
+                            app:layout_constraintTop_toBottomOf="@+id/smg2"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/vhsCardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="#2F4F4F"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    tools:ignore="DuplicateSpeakableTextCheck">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="347dp"
+                        android:layout_height="180dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="riflevhs">
+
+                        <ImageView
+                            android:id="@+id/pic4"
+                            android:layout_width="164dp"
+                            android:layout_height="164dp"
+                            android:background="#FDFDFD"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/vhs_k"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/rifle4"
+                            android:layout_width="95dp"
+                            android:layout_height="50dp"
+                            android:text="ANGECIJA ALAN VHS-K"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.19"
+                            app:layout_constraintStart_toEndOf="@+id/pic4"
+                            app:layout_constraintTop_toTopOf="@+id/pic4"
+                            app:layout_constraintVertical_bias="0.16000003"
+                            tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck,VisualLintOverlap" />
+
+
+                        <TextView
+                            android:id="@+id/pricerifle1"
+                            android:layout_width="142dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="₱350,000.00"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/pic4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.35"
+                            app:layout_constraintStart_toEndOf="@+id/pic4"
+                            app:layout_constraintTop_toBottomOf="@+id/rifle4"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+>    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/bottomNavigationView"
+    android:layout_width="412dp"
+    android:layout_height="58dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="#000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:id="@+id/HubLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/Hub1"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/mainhub1" />
+
+                <TextView
+                    android:id="@+id/hub2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Hub"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/searchLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/searchbutton"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/search" />
+
+                <TextView
+                    android:id="@+id/searchbutton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Search"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myOrderLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/myOrder"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    app:srcCompat="@drawable/cart" />
+
+                <TextView
+                    android:id="@+id/myOrder2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Order"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
